@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>参考片库</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #0a0a0a;
+            color: rgba(255, 255, 255, 0.85);
+            font-family: 'Inter', sans-serif;
+            padding: 40px 20px 60px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* 页头 */
+        .header {
+            margin-bottom: 60px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+            padding-bottom: 30px;
+        }
+
+        .header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.4rem;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.85);
+            letter-spacing: 1px;
+        }
+
+        .header p {
+            color: rgba(255, 255, 255, 0.2);
+            font-size: 0.85rem;
+            letter-spacing: 3px;
+            margin-top: 8px;
+        }
+
+        /* 分类标题 */
+        .category {
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+
+        .category h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.3);
+            letter-spacing: 2px;
+            border-left: 2px solid rgba(255, 215, 140, 0.3);
+            padding-left: 16px;
+        }
+
+        /* 卡片网格 */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 16px;
+        }
+
+        .card {
+            display: block;
+            padding: 18px 22px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.04);
+            border-radius: 8px;
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.7);
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            background: rgba(255, 255, 255, 0.06);
+            border-color: rgba(255, 215, 140, 0.15);
+            transform: translateY(-2px);
+            color: #fff;
+        }
+
+        .card .title {
+            font-size: 0.9rem;
+            font-weight: 400;
+            letter-spacing: 0.3px;
+        }
+
+        .card .brand {
+            font-size: 0.7rem;
+            color: rgba(255, 255, 255, 0.2);
+            letter-spacing: 0.5px;
+            margin-top: 6px;
+        }
+
+        .card .tag {
+            display: inline-block;
+            font-size: 0.55rem;
+            letter-spacing: 1px;
+            color: rgba(255, 215, 140, 0.4);
+            border: 1px solid rgba(255, 215, 140, 0.08);
+            padding: 2px 10px;
+            border-radius: 12px;
+            margin-top: 8px;
+        }
+
+        .card .arrow {
+            float: right;
+            color: rgba(255, 255, 255, 0.06);
+            transition: color 0.3s;
+        }
+
+        .card:hover .arrow {
+            color: rgba(255, 215, 140, 0.3);
+        }
+
+        /* 页脚 */
+        .footer {
+            margin-top: 80px;
+            padding-top: 24px;
+            border-top: 1px solid rgba(255, 255, 255, 0.03);
+            text-align: center;
+            color: rgba(255, 255, 255, 0.06);
+            font-size: 0.65rem;
+            letter-spacing: 2px;
+        }
+
+        @media (max-width: 640px) {
+            body {
+                padding: 24px 16px 40px;
+            }
+            .header h1 {
+                font-size: 1.8rem;
+            }
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <h1>参考片库</h1>
+            <p>小冰皮 · 创意参考</p>
+        </div>
+
+        <!-- ====== 童鞋 · 实拍类 ====== -->
+        <div class="category">
+            <h2>童鞋 · 实拍类</h2>
+        </div>
+        <div class="grid">
+            <a href="https://www.xinpianchang.com/a13622983?searchKw=%E7%AB%A5%E9%9E%8B&from=search_post" target="_blank" class="card">
+                <span class="title">特步童鞋｜氢风26SS</span>
+                <div class="brand">特步 · 广告片</div>
+                <span class="tag">实拍</span>
+                <span class="arrow">→</span>
+            </a>
+            <a href="https://www.xinpianchang.com/a13575905?searchKw=%E7%AB%A5%E9%9E%8B&from=search_post" target="_blank" class="card">
+                <span class="title">泰兰尼斯稳跑鞋Ultra</span>
+                <div class="brand">泰兰尼斯 · 60s</div>
+                <span class="tag">实拍</span>
+                <span class="arrow">→</span>
+            </a>
+            <a href="https://www.xinpianchang.com/a13670961?searchKw=%E7%AB%A5%E9%9E%8B&from=search_post" target="_blank" class="card">
+                <span class="title">泰兰尼斯稳跑鞋 × 许昕</span>
+                <div class="brand">泰兰尼斯 · 15s TVC</div>
+                <span class="tag">实拍</span>
+                <span class="arrow">→</span>
+            </a>
+            <a href="https://www.xinpianchang.com/a13276224?searchKw=%E7%89%B9%E6%AD%A5%E7%AB%A5%E8%A3%85&from=search_post" target="_blank" class="card">
+                <span class="title">城市童履，绘出梦核世界</span>
+                <div class="brand">DR.KONG KIDS · 24FW</div>
+                <span class="tag">实拍</span>
+                <span class="arrow">→</span>
+            </a>
+        </div>
+
+        <!-- ====== 童鞋 · 实拍+三维 ====== -->
+        <div class="category">
+            <h2>童鞋 · 实拍+三维</h2>
+        </div>
+        <div class="grid">
+            <a href="https://www.xinpianchang.com/a13462589?searchKw=%E7%AB%A5%E9%9E%8B&from=search_post" target="_blank" class="card">
+                <span class="title">特步少年成长鞋</span>
+                <div class="brand">特步 · 梯媒广告</div>
+                <span class="tag">实拍+三维</span>
+                <span class="arrow">→</span>
+            </a>
+            <a href="https://www.xinpianchang.com/a13608179?searchKw=%E7%89%B9%E6%AD%A5%E7%AB%A5%E8%A3%85&from=search_post" target="_blank" class="card">
+                <span class="title">特步100 3.0 Pro</span>
+                <div class="brand">特步 · 广告片</div>
+                <span class="tag">实拍+三维</span>
+                <span class="arrow">→</span>
+            </a>
+            <a href="https://www.xinpianchang.com/a13639274?searchKw=%E5%AE%89%E8%B8%8F&from=search_post" target="_blank" class="card">
+                <span class="title">安踏冠军乘风2代</span>
+                <div class="brand">安踏 · CG动画</div>
+                <span class="tag">实拍+三维</span>
+                <span class="arrow">→</span>
+            </a>
+            <a href="https://www.xinpianchang.com/a13124727?searchKw=%E5%AE%89%E8%B8%8F&from=search_post" target="_blank" class="card">
+                <span class="title">安踏儿童 UFO 6.0</span>
+                <div class="brand">安踏 · 巨物营销</div>
+                <span class="tag">实拍+三维</span>
+                <span class="arrow">→</span>
+            </a>
+        </div>
+
+        <!-- ====== 服装 · 实拍+三维 ====== -->
+        <div class="category">
+            <h2>服装 · 实拍+三维</h2>
+        </div>
+        <div class="grid">
+            <a href="https://www.xinpianchang.com/a13738030?searchKw=%E7%89%B9%E6%AD%A5%E7%AB%A5%E8%A3%85&from=search_post" target="_blank" class="card">
+                <span class="title">特步少年盾甲5.0</span>
+                <div class="brand">特步 · 广告片</div>
+                <span class="tag">实拍+三维</span>
+                <span class="arrow">→</span>
+            </a>
+            <a href="https://www.xinpianchang.com/a12878542?searchKw=%E5%AE%89%E8%B8%8F&from=search_post" target="_blank" class="card">
+                <span class="title">安踏冠军｜全场景叠变系统</span>
+                <div class="brand">安踏 · 广告片</div>
+                <span class="tag">实拍+三维</span>
+                <span class="arrow">→</span>
+            </a>
+            <a href="https://www.xinpianchang.com/a12761828?searchKw=%E5%84%BF%E7%AB%A5%E5%86%B2%E9%94%8B%E8%A1%A3&from=search_post" target="_blank" class="card">
+                <span class="title">GAP 童装 三合一冲锋衣</span>
+                <div class="brand">GAP · 广告片</div>
+                <span class="tag">实拍+三维</span>
+                <span class="arrow">→</span>
+            </a>
+        </div>
+
+        <!-- ====== 服装 · 纯三维 ====== -->
+        <div class="category">
+            <h2>服装 · 纯三维</h2>
+        </div>
+        <div class="grid">
+            <a href="https://www.xinpianchang.com/a12643731?searchKw=%E5%AE%89%E8%B8%8F&from=search_post" target="_blank" class="card">
+                <span class="title">安踏冠军 / 轻锋衣</span>
+                <div class="brand">安踏 · CG视频</div>
+                <span class="tag">纯三维</span>
+                <span class="arrow">→</span>
+            </a>
+            <a href="https://www.xinpianchang.com/a13221812?searchKw=%E5%AE%89%E8%B8%8F&from=search_post" target="_blank" class="card">
+                <span class="title">安踏｜「光盾」</span>
+                <div class="brand">安踏 · 广告片</div>
+                <span class="tag">纯三维</span>
+                <span class="arrow">→</span>
+            </a>
+            <a href="https://www.xinpianchang.com/a13314268?searchKw=%E5%84%BF%E7%AB%A5%E5%86%B2%E9%94%8B%E8%A1%A3&from=search_post" target="_blank" class="card">
+                <span class="title">FILA KIDS 多洛米冲锋衣</span>
+                <div class="brand">FILA · 广告片</div>
+                <span class="tag">纯三维</span>
+                <span class="arrow">→</span>
+            </a>
+        </div>
+
+        <!-- ====== 纯实拍 ====== -->
+        <div class="category">
+            <h2>冲锋衣 · 纯实拍</h2>
+        </div>
+        <div class="grid">
+            <a href="https://www.xinpianchang.com/a12940042?searchKw=%E5%84%BF%E7%AB%A5%E5%86%B2%E9%94%8B%E8%A1%A3&from=search_post" target="_blank" class="card">
+                <span class="title">THE NORTH FACE KIDS</span>
+                <div class="brand">北面 · GORE-TEX JACKET</div>
+                <span class="tag">纯实拍</span>
+                <span class="arrow">→</span>
+            </a>
+        </div>
+
+        <!-- ====== 调性参考 ====== -->
+        <div class="category">
+            <h2>调性参考</h2>
+        </div>
+        <div class="grid">
+            <a href="https://www.xinpianchang.com/a13398300?searchKw=%E5%84%BF%E7%AB%A5%E5%86%B2%E9%94%8B%E8%A1%A3&from=search_post" target="_blank" class="card">
+                <span class="title">Moodytiger 空气衣</span>
+                <div class="brand">Moodytiger · 夏日序曲</div>
+                <span class="tag">调性参考</span>
+                <span class="arrow">→</span>
+            </a>
+        </div>
+
+        <div class="footer">
+            舟人文化  · 仅供内部创意参考
+        </div>
+
+    </div>
+
+</body>
+</html>
